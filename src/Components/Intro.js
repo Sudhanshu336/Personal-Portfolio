@@ -14,7 +14,7 @@ function Intro() {
                 <div className="intro-content">
                     <span className='hello'>Hello, </span>
                     <span className='intro-text'>
-                        I'm <span className='introName'>Sudhanshu Rajput</span><br />Full Stack Developer
+                        I'm <span className='introName'>Sudhanshu </span><br />Full Stack Developer
                     </span>
                     <p className="introPara">
                             I’m a passionate and motivated Full Stack Developer with hands-on experience through personal projects and training. 
