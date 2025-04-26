@@ -1,0 +1,126 @@
+#intro {
+  padding-top: 90px; 
+  margin-top: 90px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: left;
+  position: relative; /* Added to manage fixed navbar */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-wrapper1 {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  gap: 20px; /* Gap thoda kam kar diya */
+}
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.intro-image img {
+  width: 90%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+  display: block; /* Image hide hone ka issue fix */
+  margin: 0 auto;
+}
+
+.intro-content {
+  flex: 1;
+  text-align: left;
+  max-width: 600px;
+  padding: 10px;
+  margin: 0;
+}
+
+.hello {
+  font-size: 27px;
+  color: white;
+}
+
+.intro-text {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.introName {
+  color: rgb(206, 206, 94);
+}
+
+.introPara {
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(206, 206, 94);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+  background-color:rgb(145, 145, 66);
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+  #intro {
+    padding-top: 120px; /* Navbar ke liye extra padding */
+  }
+
+  .content-wrapper1 {
+    flex-direction: column-reverse;  
+    gap: 15px; /* Mobile par aur kam gap */
+    text-align: center;
+  }
+
+  .intro-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .intro-image {
+    max-width: 250px;
+    margin-top: 10px;
+  }
+
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
